@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>حيدر الزبيدي | مهندس كهرباء</title>
+<meta name="description" content="حيدر الزبيدي، مهندس كهرباء من العراق. أعمالي ومشاريعي في الطاقة والهندسة، وأشارك اللي أتعلمه من الهندسة والتقنية بالعربي.">
+<link rel="canonical" href="https://enghaider-prog.github.io/">
+<meta name="theme-color" content="#070B16">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="ar_IQ">
+<meta property="og:title" content="حيدر الزبيدي | مهندس كهرباء">
+<meta property="og:description" content="حيدر الزبيدي، مهندس كهرباء من العراق. أعمالي ومشاريعي في الطاقة والهندسة، وأشارك اللي أتعلمه من الهندسة والتقنية بالعربي.">
+<meta property="og:url" content="https://enghaider-prog.github.io/">
+<meta property="og:image" content="https://enghaider-prog.github.io/avatar.jpg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="avatar.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "حيدر الزبيدي", "alternateName": "Haider Al-Zubaidi", "jobTitle": "مهندس كهرباء", "url": "https://enghaider-prog.github.io/", "image": "https://enghaider-prog.github.io/avatar.jpg", "email": "mailto:eng.haidertechnology@gmail.com", "address": {"@type": "PostalAddress", "addressCountry": "IQ"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "جامعة الكوفة"}, "sameAs": ["https://instagram.com/itshaider.z"]}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&display=swap">
+<style>
+  /* Thmanyah is used only where it is installed on the viewer's own device (local()).
+     The font files are not embedded, per the Thmanyah licence. Everyone else gets the fallbacks. */
+  @font-face { font-family: "TH Sans"; src: local("thmanyah sans Light"), local("thmanyahsans-Light"); font-weight: 300; }
+  @font-face { font-family: "TH Sans"; src: local("thmanyah sans Regular"), local("thmanyahsans-Regular"); font-weight: 400; }
+  @font-face { font-family: "TH Sans"; src: local("thmanyah sans Medium"), local("thmanyahsans-Medium"); font-weight: 500 600; }
+  @font-face { font-family: "TH Sans"; src: local("thmanyah sans Bold"), local("thmanyahsans-Bold"); font-weight: 700; }
+  @font-face { font-family: "TH Display"; src: local("thmanyah serif display Medium"), local("thmanyahserifdisplay-Medium"); font-weight: 500; }
+  @font-face { font-family: "TH Display"; src: local("thmanyah serif display Bold"), local("thmanyahserifdisplay-Bold"); font-weight: 700; }
+
+  :root {
+    color-scheme: dark;
+    --bg: #070B16;
+    --text: #EEF2F8;
+    --muted: #97A2B8;
+    --faint: rgba(238, 242, 248, 0.08);
+    --amber: #EBA640;
+    --amber-soft: rgba(235, 166, 64, 0.14);
+    --cyan: #62D3C8;
+    --indigo: #4A57C9;
+    --glass-fill: linear-gradient(140deg, rgba(255,255,255,0.11), rgba(255,255,255,0.035) 55%, rgba(255,255,255,0.06));
+    --glass-line: rgba(255, 255, 255, 0.13);
+    --glass-shadow: inset 0 1px 0 rgba(255,255,255,0.22), inset 0 -1px 0 rgba(255,255,255,0.04), 0 18px 40px -12px rgba(0,0,0,0.55);
+    --font-body: "TH Sans", "IBM Plex Sans Arabic", "Noto Sans Arabic", system-ui, sans-serif;
+    --font-display: "TH Display", "Noto Naskh Arabic", "IBM Plex Sans Arabic", serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+    --spring: cubic-bezier(0.34, 1.45, 0.5, 1);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    direction: rtl;
+  }
+  html, body { direction: rtl; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.75;
+    text-align: right;
+    overflow-x: hidden;
+  }
+  a { color: inherit; }
+  [hidden] { display: none !important; }
+
+  /* Thmanyah headings drawn as vector outlines (no font file on the page) */
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .th { display: inline-block; vertical-align: -0.25em; fill: currentColor; overflow: visible; }
+  .th-line { word-spacing: 0.05em; }
+  :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 8px; }
+  ::selection { background: var(--amber); color: #1a1204; }
+
+  /* ---------- ambient backdrop the glass refracts ---------- */
+  .aurora { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+  .aurora i {
+    position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.55;
+    animation: drift 26s ease-in-out infinite alternate;
+  }
+  .aurora i:nth-child(1) { width: 46vmax; height: 46vmax; background: radial-gradient(circle, rgba(235,166,64,0.55), transparent 65%); top: -14vmax; right: -10vmax; }
+  .aurora i:nth-child(2) { width: 40vmax; height: 40vmax; background: radial-gradient(circle, rgba(74,87,201,0.6), transparent 65%); top: 30vh; left: -16vmax; animation-duration: 32s; animation-delay: -8s; }
+  .aurora i:nth-child(3) { width: 34vmax; height: 34vmax; background: radial-gradient(circle, rgba(98,211,200,0.42), transparent 65%); bottom: -12vmax; right: 18vw; animation-duration: 38s; animation-delay: -14s; }
+  .aurora::after {
+    content: ""; position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1.2px);
+    background-size: 28px 28px;
+    mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 75%);
+  }
+  @keyframes drift {
+    0% { transform: translate3d(0, 0, 0) scale(1); }
+    50% { transform: translate3d(6vw, 4vh, 0) scale(1.12); }
+    100% { transform: translate3d(-4vw, -3vh, 0) scale(0.95); }
+  }
+
+  /* ---------- liquid glass material ---------- */
+  .glass {
+    position: relative;
+    background: var(--glass-fill);
+    -webkit-backdrop-filter: blur(20px) saturate(175%);
+    backdrop-filter: blur(20px) saturate(175%);
+    border: 1px solid var(--glass-line);
+    box-shadow: var(--glass-shadow);
+    isolation: isolate;
+  }
+  /* specular rim: bright on the lit corners, fading along the edges */
+  .glass::before {
+    content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; pointer-events: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0.06) 32%, rgba(255,255,255,0) 55%, rgba(255,255,255,0.28) 100%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+  }
+  /* light that follows the pointer across the surface */
+  .glass.lit::after {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: -1;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, -30%), rgba(255,255,255,0.10), transparent 45%);
+    opacity: 0; transition: opacity .35s var(--ease-out);
+  }
+  .glass.lit:hover::after { opacity: 1; }
+  /* Chromium can refract the backdrop through an SVG displacement map */
+  .refract .navpill { -webkit-backdrop-filter: url(#liquid) blur(14px) saturate(180%); backdrop-filter: url(#liquid) blur(14px) saturate(180%); }
+
+  .page { position: relative; z-index: 1; }
+  .wrap { max-width: 1080px; margin-inline: auto; padding-inline: 20px; }
+
+  /* ---------- floating nav with sliding lens ---------- */
+  .navwrap {
+    position: fixed; z-index: 20; inset-inline: 0;
+    top: calc(env(safe-area-inset-top, 0px) + 14px);
+    display: flex; justify-content: center; padding-inline: 16px; pointer-events: none;
+  }
+  .navpill {
+    pointer-events: auto;
+    display: flex; align-items: center; gap: 6px;
+    padding: 6px; border-radius: 999px;
+    transition: padding .5s var(--ease-out), transform .5s var(--ease-out);
+    overflow: hidden;
+  }
+  .navpill.compact { transform: scale(0.96); }
+  .brand {
+    font-family: var(--font-display); font-weight: 700; font-size: 1.15rem;
+    text-decoration: none; padding: 4px 14px 4px 10px; white-space: nowrap;
+  }
+  .brand .dotc { color: var(--amber); }
+  .links { position: relative; display: flex; gap: 2px; }
+  .links a {
+    position: relative; z-index: 1;
+    display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px;
+    text-decoration: none; color: var(--muted); font-size: 0.95rem; font-weight: 500; white-space: nowrap;
+    transition: color .35s var(--ease-out);
+  }
+  .links a:hover { color: var(--text); }
+  .links a.active { color: var(--text); }
+  .lens {
+    position: absolute; top: 0; left: 0; height: 100%; width: 0; border-radius: 999px; z-index: 0;
+    background: linear-gradient(160deg, rgba(255,255,255,0.20), rgba(255,255,255,0.06));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 1px rgba(0,0,0,0.25), 0 4px 14px rgba(0,0,0,0.35);
+    opacity: 0;
+    transition: transform .6s var(--spring), width .6s var(--spring), opacity .3s var(--ease-out);
+  }
+  .progress {
+    position: absolute; inset-inline: 18px; bottom: 2px; height: 2px; border-radius: 2px;
+    background: linear-gradient(90deg, var(--cyan), var(--amber));
+    transform-origin: right; transform: scaleX(0); opacity: 0.8;
+  }
+  @supports (animation-timeline: scroll()) {
+    .progress { animation: grow linear both; animation-timeline: scroll(root); }
+    @keyframes grow { to { transform: scaleX(1); } }
+  }
+
+  /* ---------- hero ---------- */
+  .hero {
+    min-height: min(720px, 100svh);
+    padding-block: 120px 60px;
+    display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 6px 14px 6px 12px; border-radius: 999px; font-size: 0.88rem; color: var(--text); margin: 0 0 22px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 0 rgba(98,211,200,0.6); animation: ping 2.4s var(--ease-out) infinite; }
+  @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(98,211,200,0.55); } 80%, 100% { box-shadow: 0 0 0 10px rgba(98,211,200,0); } }
+  h1 {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(3rem, 7.4vw, 5.4rem); line-height: 1.3; margin: 0 0 18px; text-wrap: balance;
+    color: #fff; filter: drop-shadow(0 8px 30px rgba(235,166,64,0.18));
+  }
+  .lede { color: var(--muted); font-size: 1.12rem; max-width: 34ch; margin: 0 0 30px; }
+  .lede b { color: var(--text); font-weight: 600; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px;
+    border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 0.98rem;
+    transition: transform .45s var(--spring), box-shadow .3s, background .3s;
+  }
+  .btn:hover { transform: translateY(-2px) scale(1.02); }
+  .btn:active { transform: scale(0.97); transition-duration: .12s; }
+  .btn-primary {
+    background: linear-gradient(180deg, #F4B659, var(--amber)); color: #1C1305;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.45), 0 10px 24px -8px rgba(235,166,64,0.6);
+  }
+  .btn svg { flex: none; transition: transform .45s var(--spring); }
+  .btn:hover svg { transform: translateX(-4px); }
+
+  /* load choreography: runs once on arrival, from a visible state */
+  .rise { animation: rise 1s var(--ease-out) both; }
+  .rise.d1 { animation-delay: .08s; } .rise.d2 { animation-delay: .16s; } .rise.d3 { animation-delay: .24s; } .rise.d4 { animation-delay: .36s; }
+  @keyframes rise { from { opacity: 0.15; transform: translateY(22px); filter: blur(8px); } to { opacity: 1; transform: none; filter: none; } }
+
+  /* rating plate */
+  .plate { border-radius: 28px; padding: 22px 24px 18px; }
+  .plate-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 12px; margin-bottom: 4px; border-bottom: 1px dashed rgba(255,255,255,0.14); }
+  .plate-head strong { font-size: 0.98rem; font-weight: 600; display: block; line-height: 1.4; }
+  .who { display: flex; align-items: center; gap: 14px; }
+  .avatar {
+    width: 64px; height: 64px; border-radius: 50%; flex: none; overflow: hidden; position: relative;
+    background: linear-gradient(145deg, rgba(235,166,64,0.35), rgba(74,87,201,0.35));
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.08), inset 0 1px 0 rgba(255,255,255,0.4), 0 8px 20px rgba(0,0,0,0.4);
+    display: grid; place-items: center;
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .avatar::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: linear-gradient(160deg, rgba(255,255,255,0.28), transparent 45%); pointer-events: none; }
+  .initial { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; }
+  .mono { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); direction: ltr; letter-spacing: 0.06em; }
+  .screws { display: flex; gap: 6px; }
+  .screws i { width: 7px; height: 7px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.55), rgba(255,255,255,0.08)); }
+  .plate dl { margin: 0; display: grid; grid-template-columns: auto 1fr; column-gap: 18px; }
+  .plate dt, .plate dd { padding-block: 10px; margin: 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .plate dl > :nth-last-child(-n+2) { border-bottom: 0; }
+  .plate dt { color: var(--muted); font-size: 0.87rem; white-space: nowrap; }
+  .plate dd { font-size: 0.95rem; font-weight: 500; }
+  .wave { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 10px; padding: 10px 14px; border-radius: 16px; background: rgba(0,0,0,0.22); box-shadow: inset 0 1px 2px rgba(0,0,0,0.4); }
+  .wave svg { flex: 1; height: 28px; min-width: 0; overflow: hidden; }
+  .wave path { stroke: var(--amber); stroke-width: 2; fill: none; animation: phase 2s linear infinite; }
+  .wave path.b { stroke: var(--cyan); opacity: 0.5; animation-duration: 2s; animation-delay: -0.66s; }
+  @keyframes phase { to { transform: translateX(-40px); } }
+  .wave .mono b { color: var(--amber); font-weight: 500; }
+
+  /* ---------- sections ---------- */
+  section.block { padding-block: 90px; scroll-margin-top: 80px; }
+  .sec-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 34px; }
+  .kicker { display: block; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; color: var(--cyan); direction: ltr; text-align: right; margin-bottom: 6px; }
+  h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem, 4vw, 2.8rem); margin: 0; line-height: 1.35; text-wrap: balance; }
+  .sec-note { color: var(--muted); margin: 0; font-size: 0.95rem; }
+
+  /* scroll-driven entrance for each section's content */
+  @supports (animation-timeline: view()) {
+    .reveal { animation: enter linear both; animation-timeline: view(); animation-range: entry 0% cover 28%; }
+    @keyframes enter { from { opacity: 0.35; transform: translateY(48px) scale(0.975); } to { opacity: 1; transform: none; } }
+  }
+
+  /* about */
+  .about { display: grid; grid-template-columns: 1.05fr 1fr; gap: 20px; align-items: stretch; }
+  .draft { border-radius: 26px; padding: 26px 28px; }
+  .draft::before { background: linear-gradient(135deg, rgba(235,166,64,0.9), rgba(235,166,64,0.1) 40%, rgba(235,166,64,0) 60%, rgba(235,166,64,0.5)); }
+  .tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8rem; font-weight: 600; color: var(--amber); background: var(--amber-soft); padding: 4px 12px; border-radius: 999px; margin-bottom: 14px; }
+  .draft p { margin: 0; font-size: 1.05rem; max-width: 52ch; }
+  .facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .facts li { border-radius: 20px; padding: 16px 18px; display: grid; grid-template-columns: 42px 1fr; gap: 14px; align-items: start; }
+  .ic { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; color: var(--cyan); background: rgba(98,211,200,0.1); box-shadow: inset 0 1px 0 rgba(255,255,255,0.15); }
+  .facts b { display: block; font-weight: 600; }
+  .facts span { color: var(--muted); font-size: 0.92rem; }
+
+  /* segmented control */
+  .seg { display: inline-flex; position: relative; padding: 5px; border-radius: 999px; gap: 2px; max-width: 100%; margin-bottom: 28px; }
+  .seg button {
+    position: relative; z-index: 1; font: inherit; font-size: 0.93rem; font-weight: 500; color: var(--muted);
+    background: none; border: 0; cursor: pointer; padding: 0 18px; min-height: 42px; border-radius: 999px; white-space: nowrap;
+    transition: color .35s var(--ease-out);
+  }
+  .seg button[aria-selected="true"] { color: var(--text); }
+  .seg .lens { opacity: 1; }
+
+  /* work cards */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card {
+    border-radius: 24px; padding: 22px; display: flex; flex-direction: column; gap: 10px;
+    transition: transform .55s var(--spring), border-color .3s;
+  }
+  .card:hover { transform: translateY(-5px); }
+  .card .top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .kind { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; color: var(--cyan); direction: ltr; }
+  .badge { font-size: 0.75rem; padding: 2px 10px; border-radius: 999px; color: var(--amber); background: var(--amber-soft); white-space: nowrap; }
+  .card h3 { margin: 0; font-size: 1.12rem; font-weight: 600; line-height: 1.6; text-wrap: balance; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; }
+  .chip { font-size: 0.77rem; padding: 3px 11px; border-radius: 999px; background: rgba(255,255,255,0.06); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.09); }
+  ::view-transition-group(*) { animation-duration: .5s; animation-timing-function: var(--ease-out); }
+
+  .grid.single { grid-template-columns: minmax(0, 560px); }
+  .bio { border-radius: 26px; padding: 26px 28px; max-width: 72ch; }
+  .bio p { margin: 0 0 12px; font-size: 1.05rem; } .bio p:last-child { margin: 0; }
+
+  /* news timeline */
+  .news { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; max-width: 780px; position: relative; }
+  .news li { display: grid; grid-template-columns: 96px 1fr; gap: 18px; padding: 20px 22px; border-radius: 22px; }
+  .news time { font-family: var(--font-mono); font-size: 0.85rem; color: var(--amber); font-variant-numeric: tabular-nums; padding-top: 3px; }
+  .news h3 { margin: 0 0 4px; font-size: 1.08rem; font-weight: 600; }
+  .news p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+
+  /* contact */
+  .contact-card { border-radius: 30px; padding: 34px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .contact-card p { margin: 6px 0 0; color: var(--muted); }
+  .handle { direction: ltr; font-family: var(--font-mono); font-size: 0.88rem; opacity: 0.85; }
+  .btn-glass { color: var(--text); }
+  .reach { display: flex; flex-direction: column; gap: 12px; align-items: stretch; max-width: 100%; }
+  .mail { display: flex; align-items: center; gap: 12px; padding: 8px 8px 8px 16px; padding-inline-start: 18px; border-radius: 999px; min-width: 0; }
+  .mail svg { color: var(--cyan); flex: none; }
+  .addr { direction: ltr; font-family: var(--font-mono); font-size: 0.86rem; user-select: all; overflow-wrap: anywhere; min-width: 0; flex: 1; text-align: left; }
+  .copy {
+    font: inherit; font-size: 0.85rem; font-weight: 600; color: var(--text); cursor: pointer; flex: none;
+    min-height: 36px; padding: 0 16px; border-radius: 999px; border: 0;
+    background: rgba(255,255,255,0.1); box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: background .25s, transform .4s var(--spring);
+  }
+  .copy:hover { background: rgba(255,255,255,0.16); }
+  .copy.done { background: rgba(98,211,200,0.22); color: var(--cyan); transform: scale(1.04); }
+
+  footer { position: relative; z-index: 1; padding-block: 30px 40px; color: var(--muted); font-size: 0.86rem; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; min-height: 0; padding-block: 120px 40px; gap: 36px; }
+    .about { grid-template-columns: 1fr; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    .brand { display: none; }
+    .links a { padding: 0 12px; font-size: 0.9rem; }
+    .grid { grid-template-columns: 1fr; }
+    .news li { grid-template-columns: 1fr; gap: 4px; }
+    section.block { padding-block: 64px; }
+    .seg { overflow-x: auto; }
+    .seg button { padding: 0 14px; }
+    .contact-card { padding: 24px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .aurora i, .dot, .wave path, .rise { animation: none !important; }
+    .reveal { animation: none !important; }
+    * { transition-duration: .01ms !important; }
+  }
+</style>
+<style>html,body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="liquid" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="noise"/>
+    <feGaussianBlur in="noise" stdDeviation="2" result="soft"/>
+    <feDisplacementMap in="SourceGraphic" in2="soft" scale="38" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<div class="navwrap">
+  <nav class="navpill glass" id="nav" aria-label="التنقل الرئيسي">
+    <a class="brand" href="#top"><span data-th="display-bold"><span class="sr">حيدر</span><span class="th-line" aria-hidden="true"><svg class="th" viewBox="0 -1000 1714 1250" style="width:1.714em;height:1.250em" aria-hidden="true" focusable="false"><path d="M134 -422H117L58 -282C109 -225 172 -157 203 -96C164 21 31 95 -146 120V137L58 230C152 123 223 -28 223 -165C223 -179 222 -194 220 -208L248 -272Z M313 -246H296C290 -197 286 -138 286 -110C286 -21 326 4 389 4C451 4 522 -22 566 -49L601 -168L615 -134C655 -35 686 0 746 0C778 0 795 -17 795 -49V-164C732 -164 706 -172 687 -229L589 -517H571L507 -400L596 -181C551 -172 488 -159 423 -159C348 -159 322 -177 313 -246Z M796 -164C764 -164 748 -148 748 -116V0C798 0 859 -13 898 -39L928 -152C926 -35 994 0 1074 0C1106 0 1123 -17 1123 -49V-164C1044 -164 984 -188 980 -267L977 -332H959L940 -242C934 -218 931 -196 929 -176C900 -171 842 -164 796 -164ZM1045 171C1046 171 1046 159 1045 158L967 80L897 150L827 80L748 159V170L827 250L897 180L967 250Z M1214 -299C1317 -299 1396 -227 1511 -191C1429 -169 1326 -164 1159 -164H1124C1092 -164 1075 -147 1075 -115V0C1172 0 1246 -24 1347 -107C1365 -122 1427 -171 1549 -171H1666L1706 -278L1701 -290H1656C1486 -290 1392 -449 1272 -449C1229 -449 1195 -428 1161 -398L1121 -298L1130 -288C1159 -293 1189 -299 1214 -299Z"/></svg></span></span><span class="dotc">.</span></a>
+    <div class="links" id="links">
+      <span class="lens" id="navLens" aria-hidden="true"></span>
+      <a href="#work" data-sec="work">الأعمال</a>
+      <a href="#contact" data-sec="contact">تواصل</a>
+    </div>
+    <span class="progress" aria-hidden="true"></span>
+  </nav>
+</div>
+
+<div class="page" id="top">
+  <div class="wrap">
+    <header class="hero" id="hero">
+      <div>
+        <p class="eyebrow glass rise"><span class="dot"></span>مهندس · باحث · صانع محتوى</p>
+        <h1 class="rise d1" data-th="display-bold"><span class="sr">حيدر الزبيدي</span><span class="th-line" aria-hidden="true"><svg class="th" viewBox="0 -1000 1714 1250" style="width:1.714em;height:1.250em" aria-hidden="true" focusable="false"><path d="M134 -422H117L58 -282C109 -225 172 -157 203 -96C164 21 31 95 -146 120V137L58 230C152 123 223 -28 223 -165C223 -179 222 -194 220 -208L248 -272Z M313 -246H296C290 -197 286 -138 286 -110C286 -21 326 4 389 4C451 4 522 -22 566 -49L601 -168L615 -134C655 -35 686 0 746 0C778 0 795 -17 795 -49V-164C732 -164 706 -172 687 -229L589 -517H571L507 -400L596 -181C551 -172 488 -159 423 -159C348 -159 322 -177 313 -246Z M796 -164C764 -164 748 -148 748 -116V0C798 0 859 -13 898 -39L928 -152C926 -35 994 0 1074 0C1106 0 1123 -17 1123 -49V-164C1044 -164 984 -188 980 -267L977 -332H959L940 -242C934 -218 931 -196 929 -176C900 -171 842 -164 796 -164ZM1045 171C1046 171 1046 159 1045 158L967 80L897 150L827 80L748 159V170L827 250L897 180L967 250Z M1214 -299C1317 -299 1396 -227 1511 -191C1429 -169 1326 -164 1159 -164H1124C1092 -164 1075 -147 1075 -115V0C1172 0 1246 -24 1347 -107C1365 -122 1427 -171 1549 -171H1666L1706 -278L1701 -290H1656C1486 -290 1392 -449 1272 -449C1229 -449 1195 -428 1161 -398L1121 -298L1130 -288C1159 -293 1189 -299 1214 -299Z"/></svg> <svg class="th" viewBox="0 -1000 2723 1250" style="width:2.723em;height:1.250em" aria-hidden="true" focusable="false"><path d="M654 -373C664 -403 676 -441 676 -475C676 -537 635 -565 581 -565C459 -565 312 -423 307 -272C305 -200 335 -156 408 -140L620 -94C532 -47 374 -5 253 -5C136 -5 47 -51 47 -178C47 -222 61 -283 74 -335H57C25 -247 9 -158 9 -89C9 91 122 159 254 159C380 159 531 96 607 31L640 -109C651 -159 637 -224 531 -249L322 -296L326 -303C349 -342 450 -424 540 -424C576 -424 614 -411 641 -373ZM399 330C400 330 400 318 399 317L321 239L251 309L181 239L102 318V329L181 409L251 339L321 409Z M762 -246H745C739 -197 735 -138 735 -110C735 -21 775 4 838 4C900 4 971 -22 1015 -49L1050 -168L1064 -134C1104 -35 1135 0 1195 0C1227 0 1244 -17 1244 -49V-164C1181 -164 1155 -172 1136 -229L1038 -517H1020L956 -400L1045 -181C1000 -172 937 -159 872 -159C797 -159 771 -177 762 -246Z M1245 -164C1213 -164 1197 -148 1197 -116V0C1247 0 1308 -13 1347 -39L1377 -152C1375 -35 1443 0 1523 0C1555 0 1572 -17 1572 -49V-164C1493 -164 1433 -188 1429 -267L1426 -332H1408L1389 -242C1383 -218 1380 -196 1378 -176C1349 -171 1291 -164 1245 -164ZM1494 171C1495 171 1495 159 1494 158L1416 80L1346 150L1276 80L1197 159V170L1276 250L1346 180L1416 250Z M1745 -456H1727L1667 -314C1712 -265 1756 -217 1780 -182C1723 -171 1642 -164 1574 -164C1541 -164 1525 -147 1525 -115V0C1600 0 1689 -18 1746 -49L1789 -164C1803 -203 1810 -241 1809 -280L1830 -330L1756 -439C1752 -445 1749 -450 1745 -456ZM1737 180C1738 179 1738 166 1737 165L1650 78L1562 166V179L1650 267Z M1995 -205 2102 -47C2059 37 1957 126 1784 146V160L1987 257C2058 169 2104 70 2117 -44C2146 -12 2170 0 2204 0C2236 0 2253 -17 2253 -49V-164C2181 -164 2158 -163 2127 -221L2068 -330H2051ZM2148 -513C2149 -514 2149 -527 2148 -528L2061 -615L1973 -527V-514L2061 -426Z M2388 -754H2371V-753V-754L2296 -656L2322 -169C2300 -166 2273 -164 2253 -164C2228 -164 2205 -141 2205 -116V0C2253 0 2299 -25 2319 -40C2355 -130 2403 -320 2403 -432V-521L2435 -561Z M2636 -754H2619V-753L2543 -657L2573 16H2591L2637 -142C2647 -176 2652 -210 2652 -245V-522L2683 -561Z"/></svg></span></h1>
+        <p class="lede rise d2">مهندس كهرباء، أشارك اللي أتعلمه من الهندسة والتقنية بالعربي.</p>
+        <div class="cta rise d3">
+          <a class="btn btn-primary" href="#work">تصفح أعمالي
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+          </a>
+          <a class="btn btn-glass glass" href="#contact">تواصل معي</a>
+        </div>
+      </div>
+
+      <aside class="plate glass lit rise d4" aria-label="لوحة البيانات">
+        <div class="plate-head">
+          <div class="who">
+            <div class="avatar" id="avatar"><img src="avatar.jpg" alt="صورة حيدر الزبيدي" width="64" height="64"></div>
+            <div><strong>لوحة البيانات</strong><span class="mono">RATING PLATE</span></div>
+          </div>
+          <span class="screws" aria-hidden="true"><i></i><i></i></span>
+        </div>
+        <dl>
+          <dt>التخصص</dt><dd>هندسة كهربائية</dd>
+          <dt>المؤهلات</dt><dd>بكالوريوس هندسة كهربائية</dd>
+          <dt>مجالات العمل</dt><dd>الأنظمة المدمجة، <bdi>PLC</bdi>، <bdi>SCADA</bdi>، الطاقة الشمسية</dd>
+          <dt>الموقع</dt><dd>العراق</dd>
+        </dl>
+        <div class="wave" aria-hidden="true">
+          <span class="mono"><b>50 Hz</b> · 230 V</span>
+          <svg viewBox="0 0 160 28" preserveAspectRatio="none">
+            <path d="M0 14 Q10 0 20 14 T40 14 T60 14 T80 14 T100 14 T120 14 T140 14 T160 14 T180 14 T200 14"/>
+            <path class="b" d="M0 14 Q10 0 20 14 T40 14 T60 14 T80 14 T100 14 T120 14 T140 14 T160 14 T180 14 T200 14"/>
+          </svg>
+          <span class="mono">STATUS <b>ON</b></span>
+        </div>
+      </aside>
+    </header>
+  </div>
+
+  
+
+  <section class="block" id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="kicker">WORK</span><h2 data-th="display-bold"><span class="sr">الأعمال والمحتوى</span><span class="th-line" aria-hidden="true"><svg class="th" viewBox="0 -1000 2811 1250" style="width:2.811em;height:1.250em" aria-hidden="true" focusable="false"><path d="M515 -756H498V-754L497 -755L423 -659L458 -40C406 -7 303 17 225 17C122 17 43 -23 43 -134C43 -172 53 -219 62 -262H44C27 -207 9 -129 9 -48C9 83 58 179 198 179C291 179 380 137 424 112L476 -27C512 -118 530 -213 530 -312V-523L562 -563Z M828 0C860 0 877 -17 877 -49V-164C797 -164 768 -172 768 -221V-751H750L661 -626L685 -221C695 -68 737 0 828 0Z M982 -210C975 -197 970 -185 967 -174C944 -166 925 -164 877 -164C845 -164 829 -148 829 -116V0C858 0 886 -4 902 -12L963 -142C963 -105 986 -74 1030 -53C1093 -22 1156 0 1239 14L1291 -118C1319 -56 1349 0 1404 0C1429 -6 1450 -14 1452 -38V-164C1316 -164 1339 -410 1190 -410C1109 -410 1039 -315 996 -235ZM1007 -221C1041 -259 1083 -286 1130 -286C1214 -286 1250 -205 1285 -129C1175 -158 1089 -188 1007 -221Z M1454 -164C1423 -164 1405 -153 1405 -120V0C1555 0 1765 -30 1891 -79L1952 -193L1944 -208C1849 -189 1773 -182 1713 -182C1535 -182 1495 -247 1495 -272C1495 -302 1550 -343 1654 -343C1738 -343 1802 -317 1839 -289L1851 -296C1842 -352 1815 -494 1679 -494C1550 -494 1481 -367 1481 -265C1481 -224 1491 -191 1509 -164C1491 -164 1473 -164 1454 -164Z M2005 -659 1989 -651 1970 -550C1960 -500 1980 -468 2029 -455L2112 -434L2136 -455C2296 -380 2434 -284 2468 -177C2403 -166 2301 -164 2183 -164H2148L2091 -12L2097 0H2119C2272 0 2389 -23 2447 -46L2478 -152C2526 -333 2349 -507 2005 -659ZM1984 -725 1990 -715 2176 -769 2209 -836 2201 -846 2160 -837C2146 -835 2134 -834 2123 -834C2059 -834 2035 -868 2038 -883C2041 -895 2069 -907 2092 -907C2123 -907 2141 -887 2155 -866L2169 -869L2171 -874C2194 -924 2172 -978 2120 -978C2073 -978 2041 -931 2027 -899C2007 -855 2011 -815 2042 -787C2037 -782 2032 -777 2026 -771Z M2465 -754H2448V-753L2447 -754L2381 -657L2402 -361C2350 -267 2280 -234 2179 -147L2195 -133C2363 -259 2458 -322 2477 -518L2512 -561Z M2724 -754H2707V-753L2631 -657L2661 16H2679L2725 -142C2735 -176 2740 -210 2740 -245V-522L2771 -561Z"/></svg> <svg class="th" viewBox="0 -1000 3639 1250" style="width:3.639em;height:1.250em" aria-hidden="true" focusable="false"><path d="M654 -373C664 -403 676 -441 676 -475C676 -537 635 -565 581 -565C459 -565 312 -423 307 -272C305 -200 335 -156 408 -140L620 -94C532 -47 374 -5 253 -5C136 -5 47 -51 47 -178C47 -222 61 -283 74 -335H57C25 -247 9 -158 9 -89C9 91 122 159 254 159C380 159 531 96 607 31L640 -109C651 -159 637 -224 531 -249L322 -296L326 -303C349 -342 450 -424 540 -424C576 -424 614 -411 641 -373Z M1141 0C1173 0 1190 -17 1190 -49V-164H1101C1094 -338 1010 -411 924 -411C836 -411 748 -320 748 -163C748 -56 803 0 883 0H1064C991 88 864 138 720 155V173L926 266C997 184 1055 103 1083 0ZM764 -215C764 -243 815 -261 876 -261C946 -261 1025 -233 1061 -164H883C815 -164 764 -181 764 -215Z M1189 -164C1157 -164 1141 -148 1141 -116V0C1191 0 1252 -13 1291 -39L1321 -152C1319 -35 1387 0 1467 0C1499 0 1516 -17 1516 -49V-164C1437 -164 1377 -188 1373 -267L1370 -332H1352L1333 -242C1327 -218 1324 -196 1322 -176C1293 -171 1235 -164 1189 -164ZM1475 -490C1476 -490 1476 -502 1475 -503L1397 -581L1327 -510L1256 -581L1177 -502V-491L1256 -411L1327 -482L1397 -411Z M2120 0C2152 0 2169 -17 2169 -49V-164C2038 -164 1988 -169 1971 -203H2041V-204H2064L2103 -311L2098 -322H2053C1877 -322 1782 -449 1675 -449C1625 -449 1579 -421 1553 -398L1514 -296L1522 -288C1544 -291 1583 -298 1612 -298C1683 -298 1766 -256 1869 -228C1803 -190 1717 -164 1564 -164H1517C1485 -164 1468 -147 1468 -115V0C1586 0 1651 -30 1739 -115C1791 -166 1830 -203 1922 -203H1938V-171C1938 -60 1970 0 2120 0Z M2273 -210C2266 -197 2261 -185 2258 -174C2235 -166 2216 -164 2168 -164C2136 -164 2120 -148 2120 -116V0C2149 0 2177 -4 2193 -12L2254 -142C2254 -105 2277 -74 2321 -53C2384 -22 2447 0 2530 14L2582 -118C2610 -56 2640 0 2695 0C2720 -6 2741 -14 2743 -38V-164C2607 -164 2630 -410 2481 -410C2400 -410 2330 -315 2287 -235ZM2298 -221C2332 -259 2374 -286 2421 -286C2505 -286 2541 -205 2576 -129C2466 -158 2380 -188 2298 -221Z M2879 -754H2862V-753V-754L2787 -656L2813 -169C2791 -166 2764 -164 2744 -164C2719 -164 2696 -141 2696 -116V0C2744 0 2790 -25 2810 -40C2846 -130 2894 -320 2894 -432V-521L2926 -561Z M3127 -754H3110V-753L3034 -657L3064 16H3082L3128 -142C3138 -176 3143 -210 3143 -245V-522L3174 -561Z M3428 228C3539 107 3603 -11 3603 -160C3603 -304 3543 -443 3428 -443C3336 -443 3251 -354 3251 -211C3251 -97 3305 -43 3382 -43C3445 -43 3532 -74 3584 -133C3584 -128 3585 -124 3585 -119C3585 -20 3457 89 3224 117V135ZM3401 -191C3312 -191 3267 -207 3267 -238C3267 -270 3317 -291 3369 -291C3435 -291 3509 -257 3551 -206C3519 -199 3462 -191 3401 -191Z"/></svg></span></h2></div>
+      </div>
+      
+      <div class="grid single" id="grid">
+        <article class="card glass lit reveal" data-cat="res" style="view-transition-name: c1">
+          <div class="top"><span class="kind">GRADUATION PROJECT</span><span class="badge">مشروع تخرج</span></div>
+          <h3 data-th="sans-bold"><span class="sr">جسيمات أوكسيد الزنك النانوية للخلايا الشمسية</span><span class="th-line" aria-hidden="true"><svg class="th" viewBox="0 -1000 3647 1250" style="width:3.647em;height:1.250em" aria-hidden="true" focusable="false"><path d="M53 -422C0 -144 43 0 372 0H571V-1V0C736 0 881 -86 837 -326L815 -451L690 -428L720 -256C733 -182 709 -163 637 -160H374C153 -160 122 -207 157 -409ZM377 -411 448 -482 518 -411 603 -496 518 -581 448 -510 377 -581 293 -496Z M1130 0C1159 0 1174 -15 1174 -44V-159C1092 -159 1061 -166 1061 -242V-751H940V-219C940 -62 1032 0 1130 0Z M1174 -159C1146 -159 1131 -144 1131 -116V0C1178 0 1232 -14 1266 -46L1285 -127C1312 -46 1384 0 1471 0C1521 0 1564 -15 1592 -32L1627 -127L1631 -119C1667 -30 1719 0 1780 0C1808 0 1823 -15 1823 -44V-159C1743 -159 1724 -186 1703 -238L1684 -284C1646 -378 1581 -431 1486 -431C1358 -431 1273 -334 1273 -205C1273 -194 1274 -184 1275 -173C1247 -164 1215 -159 1174 -159ZM1486 -140C1411 -140 1369 -165 1369 -211C1369 -261 1416 -294 1474 -294C1544 -294 1578 -246 1594 -206L1613 -160C1574 -149 1528 -140 1486 -140Z M2128 0C2156 0 2172 -15 2172 -44V-159C2096 -159 2061 -170 2061 -252V-396H1942V-224C1942 -207 1943 -191 1944 -176C1909 -165 1867 -159 1823 -159C1795 -159 1780 -144 1780 -116V0C1827 0 1889 -14 1929 -46L1952 -133C1976 -37 2041 0 2128 0ZM1877 247 1947 176 2017 247 2102 162 2017 77 1947 147 1877 77 1793 162Z M2982 0C3010 0 3026 -15 3026 -44V-159C2952 -159 2919 -174 2919 -239V-351H2800V-224C2800 -206 2801 -187 2803 -168C2787 -163 2768 -159 2750 -159C2715 -159 2698 -174 2698 -206V-284H2579V-183C2579 -176 2579 -169 2580 -163C2560 -155 2538 -150 2508 -150C2452 -150 2417 -168 2386 -195L2430 -266L2343 -322L2274 -214C2251 -179 2221 -159 2173 -159C2144 -159 2128 -144 2128 -115V0C2208 0 2253 -15 2306 -79C2347 -25 2403 0 2452 0C2500 0 2537 -24 2559 -41L2584 -115C2597 -31 2637 0 2693 0C2741 0 2776 -22 2799 -47L2812 -124C2831 -55 2878 0 2982 0Z M3196 -329C3247 -329 3301 -287 3366 -246C3254 -191 3154 -159 3026 -159C2997 -159 2982 -144 2982 -115V0C3260 0 3319 -174 3553 -174H3638V-289H3593C3420 -289 3349 -469 3195 -469C3086 -469 3040 -380 3017 -322L3108 -269C3128 -299 3153 -329 3196 -329ZM3255 267 3349 172 3255 78 3161 172Z"/></svg> <svg class="th" viewBox="0 -1000 3024 1250" style="width:3.024em;height:1.250em" aria-hidden="true" focusable="false"><path d="M126 -253H22C22 -120 60 0 227 0C298 0 357 -21 403 -53L431 -148L435 -137C472 -40 520 0 592 0C621 0 636 -15 636 -44V-159C571 -159 551 -168 528 -231L409 -568L292 -518L418 -183C368 -170 301 -159 247 -159C138 -159 126 -203 126 -253Z M941 0C969 0 985 -15 985 -44V-159C909 -159 874 -170 874 -252V-396H755V-224C755 -207 756 -191 757 -176C722 -165 680 -159 636 -159C608 -159 593 -144 593 -116V0C640 0 702 -14 742 -46L765 -133C789 -37 854 0 941 0ZM690 247 760 176 830 247 915 162 830 77 760 147 690 77 606 162Z M1795 0C1823 0 1839 -15 1839 -44V-159C1765 -159 1732 -174 1732 -239V-351H1613V-224C1613 -206 1614 -187 1616 -168C1600 -163 1581 -159 1563 -159C1528 -159 1511 -174 1511 -206V-284H1392V-183C1392 -176 1392 -169 1393 -163C1373 -155 1351 -150 1321 -150C1265 -150 1230 -168 1199 -195L1243 -266L1156 -322L1087 -214C1064 -179 1034 -159 986 -159C957 -159 941 -144 941 -115V0C1021 0 1066 -15 1119 -79C1160 -25 1216 0 1265 0C1313 0 1350 -24 1372 -41L1397 -115C1410 -31 1450 0 1506 0C1554 0 1589 -22 1612 -47L1625 -124C1644 -55 1691 0 1795 0Z M1825 -159C1805 -159 1795 -149 1795 -129V0H1943C2090 0 2219 -54 2219 -200C2219 -336 2107 -405 1970 -484L1920 -513L2341 -636V-769L1872 -629V-409L1899 -393C2056 -308 2115 -242 2115 -205C2115 -171 2063 -159 1943 -159Z M2358 230C2671 230 2735 8 2735 -155C2735 -347 2646 -474 2504 -474C2387 -474 2298 -388 2298 -243C2298 -114 2369 -45 2468 -45C2509 -45 2543 -57 2586 -81L2628 -184C2630 -170 2631 -156 2631 -140C2631 -39 2582 89 2347 89H2308V230ZM2496 -189C2438 -189 2394 -212 2394 -258C2394 -301 2435 -330 2484 -330C2547 -330 2606 -284 2625 -199C2591 -194 2547 -189 2496 -189Z M2957 0V-671H2837V0ZM2799 -707 3005 -758 2996 -818 2929 -805C2918 -803 2909 -802 2901 -802C2861 -802 2845 -824 2845 -840C2845 -862 2871 -872 2891 -872C2916 -872 2932 -855 2940 -840L2984 -860C2976 -898 2954 -937 2900 -937C2844 -937 2802 -895 2802 -836C2802 -805 2813 -783 2833 -767C2822 -762 2810 -756 2794 -750Z"/></svg> <svg class="th" viewBox="0 -1000 2037 1250" style="width:2.037em;height:1.250em" aria-hidden="true" focusable="false"><path d="M157 -383 56 -390C42 -331 34 -277 34 -228C34 -75 111 16 328 16C478 16 613 -27 694 -60L715 -147C739 -43 815 0 897 0C926 0 941 -15 941 -44V-159C859 -159 828 -166 828 -242V-751H707V-219C707 -208 708 -198 709 -188C629 -171 485 -144 345 -144C201 -144 146 -173 146 -280C146 -308 150 -342 157 -383ZM476 -610C427 -601 338 -582 338 -505C338 -450 383 -437 435 -429L450 -427C466 -424 478 -419 478 -409C478 -397 460 -389 405 -389H326V-317H405C506 -317 532 -379 532 -428C532 -478 505 -493 451 -501L444 -503C416 -507 392 -511 392 -517C392 -529 468 -540 495 -545L524 -550L512 -617Z M898 0C1063 0 1208 -86 1164 -326L1142 -451L1017 -428L1047 -256C1061 -175 1031 -159 943 -159C914 -159 898 -144 898 -115ZM1075 -538 1169 -633 1075 -727 981 -633Z M1503 0C1532 0 1547 -15 1547 -44V-159H1537C1466 -159 1438 -186 1411 -290L1391 -366V-365C1391 -366 1391 -366 1391 -366L1277 -337C1312 -214 1336 -127 1336 -56C1336 25 1304 108 1142 108C1130 108 1113 108 1101 107V243C1122 245 1148 247 1166 247C1364 247 1431 117 1440 -21C1457 -7 1477 0 1503 0ZM1335 -454 1429 -549 1335 -643 1241 -549Z M1547 -159C1519 -159 1503 -144 1503 -116V0C1674 0 1731 -114 1731 -298V-751H1611V-229C1611 -178 1588 -159 1547 -159Z M1970 0V-751H1850V0Z"/></svg> <svg class="th" viewBox="0 -1000 2794 1250" style="width:2.794em;height:1.250em" aria-hidden="true" focusable="false"><path d="M534 0C562 0 578 -15 578 -44V-159C510 -159 463 -165 463 -233V-557H351V-479L197 -420C73 -373 34 -285 34 -206C34 -106 99 -32 203 -32C250 -32 300 -47 326 -62L356 -152C375 -53 441 0 534 0ZM265 -644 335 -715 405 -644 490 -729 405 -814 335 -744 265 -814 181 -729ZM228 -309 351 -350V-215C351 -209 351 -203 351 -198C308 -184 259 -175 223 -175C172 -175 133 -194 133 -231C133 -266 169 -290 228 -309Z M534 0C699 0 844 -86 800 -326L778 -451L653 -428L683 -256C697 -175 667 -159 579 -159C550 -159 534 -144 534 -115ZM594 247 664 176 734 247 819 162 734 77 664 147 594 77 510 162Z M945 275C1191 275 1283 138 1311 0H1348C1377 0 1392 -15 1392 -44V-159H1320C1306 -324 1220 -429 1091 -429C974 -429 885 -343 885 -198C885 -69 955 0 1049 0H1200C1171 72 1097 134 934 134H895V275ZM981 -220C981 -259 1022 -289 1071 -289C1133 -289 1191 -243 1211 -160H1081C1024 -160 981 -180 981 -220Z M1348 0C1513 0 1658 -86 1614 -326L1592 -451L1467 -428L1497 -256C1511 -175 1481 -159 1393 -159C1364 -159 1348 -144 1348 -115ZM1525 -538 1619 -633 1525 -727 1431 -633Z M1907 0C1936 0 1951 -15 1951 -44V-159C1869 -159 1838 -166 1838 -242V-751H1717V-219C1717 -62 1809 0 1907 0Z M1951 -159C1923 -159 1908 -144 1908 -116V0C1955 0 2017 -14 2057 -46L2084 -148C2104 -32 2175 0 2259 0C2288 0 2303 -15 2303 -44V-159C2238 -159 2197 -167 2197 -242V-358H2077V-224C2077 -208 2078 -193 2079 -178C2042 -165 1998 -159 1951 -159ZM2130 -445 2224 -540 2130 -634 2036 -540Z M2304 -159C2276 -159 2260 -144 2260 -116V0C2431 0 2488 -114 2488 -298V-751H2368V-229C2368 -178 2345 -159 2304 -159Z M2727 0V-751H2607V0Z"/></svg> <svg class="th" viewBox="0 -1000 2482 1250" style="width:2.482em;height:1.250em" aria-hidden="true" focusable="false"><path d="M240 0C269 0 284 -15 284 -44V-159C202 -159 171 -166 171 -242V-751H50V-219C50 -62 142 0 240 0Z M241 0C406 0 551 -86 507 -326L485 -451L360 -428L390 -256C404 -175 374 -159 286 -159C257 -159 241 -144 241 -115ZM301 247 371 176 441 247 526 162 441 77 371 147 301 77 217 162Z M650 -617 805 -131 924 -149 763 -658Z M581 0H744C874 0 951 -69 994 -163C1013 -47 1094 0 1179 0C1208 0 1223 -15 1223 -44V-159C1141 -159 1110 -166 1110 -242V-751H989V-346C988 -213 963 -159 722 -159H581Z M1884 0C1913 0 1929 -15 1929 -44V-159C1823 -159 1769 -166 1762 -224H1846V-340H1806C1629 -340 1544 -484 1398 -484C1290 -484 1240 -407 1214 -337L1306 -284C1325 -318 1351 -344 1395 -344C1446 -344 1501 -312 1568 -281C1458 -222 1350 -159 1223 -159C1195 -159 1180 -144 1180 -116V0C1418 0 1500 -162 1661 -211C1654 -100 1706 0 1874 0ZM1391 -578 1485 -673 1391 -767 1297 -673Z M1928 -159C1900 -159 1885 -144 1885 -116V0C1932 0 1980 -14 2010 -46L2026 -128C2055 -37 2127 0 2203 0C2232 0 2247 -15 2247 -44V-159C2165 -159 2134 -166 2134 -242V-751H2013V-219C2013 -203 2015 -187 2016 -172C1995 -164 1967 -159 1928 -159Z M2247 -159C2219 -159 2203 -144 2203 -116V0C2374 0 2431 -114 2431 -298V-751H2311V-229C2311 -178 2288 -159 2247 -159Z"/></svg> <svg class="th" viewBox="0 -1000 3773 1250" style="width:3.773em;height:1.250em" aria-hidden="true" focusable="false"><path d="M534 0C562 0 578 -15 578 -44V-159C510 -159 463 -165 463 -233V-557H351V-479L197 -420C73 -373 34 -285 34 -206C34 -106 99 -32 203 -32C250 -32 300 -47 326 -62L356 -152C375 -53 441 0 534 0ZM265 -644 335 -715 405 -644 490 -729 405 -814 335 -744 265 -814 181 -729ZM228 -309 351 -350V-215C351 -209 351 -203 351 -198C308 -184 259 -175 223 -175C172 -175 133 -194 133 -231C133 -266 169 -290 228 -309Z M882 0C910 0 926 -15 926 -44V-159C850 -159 815 -170 815 -252V-396H696V-224C696 -207 697 -191 698 -176C663 -165 621 -159 577 -159C549 -159 534 -144 534 -116V0C581 0 643 -14 683 -46L706 -133C730 -37 795 0 882 0ZM631 247 701 176 771 247 856 162 771 77 701 147 631 77 547 162Z M1736 0C1764 0 1780 -15 1780 -44V-159C1706 -159 1673 -174 1673 -239V-351H1554V-224C1554 -206 1555 -187 1557 -168C1541 -163 1522 -159 1504 -159C1469 -159 1452 -174 1452 -206V-284H1333V-183C1333 -176 1333 -169 1334 -163C1314 -155 1292 -150 1262 -150C1206 -150 1171 -168 1140 -195L1184 -266L1097 -322L1028 -214C1005 -179 975 -159 927 -159C898 -159 882 -144 882 -115V0C962 0 1007 -15 1060 -79C1101 -25 1157 0 1206 0C1254 0 1291 -24 1313 -41L1338 -115C1351 -31 1391 0 1447 0C1495 0 1530 -22 1553 -47L1566 -124C1585 -55 1632 0 1736 0Z M1779 -159C1751 -159 1736 -144 1736 -116V0C1783 0 1837 -14 1871 -46L1890 -127C1917 -46 1989 0 2076 0C2126 0 2169 -15 2197 -32L2232 -127L2236 -119C2272 -30 2324 0 2385 0C2413 0 2428 -15 2428 -44V-159C2348 -159 2329 -186 2308 -238L2289 -284C2251 -378 2186 -431 2091 -431C1963 -431 1878 -334 1878 -205C1878 -194 1879 -184 1880 -173C1852 -164 1820 -159 1779 -159ZM2091 -140C2016 -140 1974 -165 1974 -211C1974 -261 2021 -294 2079 -294C2149 -294 2183 -246 2199 -206L2218 -160C2179 -149 2133 -140 2091 -140Z M3239 0C3267 0 3283 -15 3283 -44V-159C3209 -159 3176 -174 3176 -239V-351H3057V-224C3057 -206 3058 -187 3060 -168C3044 -163 3025 -159 3007 -159C2972 -159 2955 -174 2955 -206V-284H2836V-183C2836 -176 2836 -169 2837 -163C2817 -155 2795 -150 2765 -150C2709 -150 2674 -168 2643 -195L2687 -266L2600 -322L2531 -214C2508 -179 2478 -159 2430 -159C2401 -159 2385 -144 2385 -115V0C2465 0 2510 -15 2563 -79C2604 -25 2660 0 2709 0C2757 0 2794 -24 2816 -41L2841 -115C2854 -31 2894 0 2950 0C2998 0 3033 -22 3056 -47L3069 -124C3088 -55 3135 0 3239 0ZM2834 -406 2904 -477 2974 -406 3059 -491 2974 -576 2904 -506 2834 -576 2750 -491ZM2904 -561 2986 -644 2904 -726 2822 -644Z M3283 -159C3255 -159 3239 -144 3239 -116V0C3410 0 3467 -114 3467 -298V-751H3347V-229C3347 -178 3324 -159 3283 -159Z M3706 0V-751H3586V0Z"/></svg></span></h3>
+          <p>تحضير جسيمات <bdi>ZnO</bdi> النانوية ودراسة استخدامها في الخلايا الشمسية، مع أعمال محاكاة مرتبطة.</p>
+          <div class="chips"><span class="chip">ZnO</span><span class="chip">مواد نانوية</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="block" id="contact">
+    <div class="wrap">
+      <div class="contact-card glass lit reveal">
+        <div>
+          <span class="kicker">CONTACT</span>
+          <h2 data-th="display-bold"><span class="sr">خلّينا نتواصل</span><span class="th-line" aria-hidden="true"><svg class="th" viewBox="0 -1000 1822 1250" style="width:1.822em;height:1.250em" aria-hidden="true" focusable="false"><path d="M220 0C252 0 269 -17 269 -49V-164C189 -164 160 -172 160 -221V-751H142L53 -626L77 -221C87 -68 129 0 220 0Z M269 -164C237 -164 221 -148 221 -116V0C303 0 360 -87 401 -156L408 -166C448 -71 500 0 578 0C610 0 627 -17 627 -49V-164C555 -164 508 -198 477 -260H462C396 -175 358 -164 269 -164ZM522 -491C523 -492 523 -505 522 -506L435 -593L347 -505V-492L435 -404Z M627 -164C595 -164 579 -148 579 -116V0C629 0 690 -13 729 -39L759 -152C757 -35 825 0 905 0C937 0 954 -17 954 -49V-164C875 -164 815 -188 811 -267L808 -332H790L771 -242C765 -218 762 -196 760 -176C731 -171 673 -164 627 -164ZM876 171C877 171 877 159 876 158L798 80L728 150L658 80L579 159V170L658 250L728 180L798 250Z M1153 -995 1128 -947C1145 -928 1163 -904 1170 -885C1160 -885 1133 -886 1127 -887C1086 -889 1080 -914 1083 -957H1074C1063 -922 1043 -880 998 -880C969 -880 953 -898 961 -947H951L941 -912C924 -852 943 -815 983 -815C1024 -815 1049 -854 1057 -888C1055 -861 1076 -825 1110 -825C1148 -825 1185 -868 1185 -919C1185 -946 1175 -976 1162 -995Z M1182 0C1214 0 1231 -17 1231 -49V-164C1151 -164 1122 -172 1122 -221V-751H1104L1015 -626L1039 -221C1040 -204 1042 -188 1044 -173C1016 -166 990 -164 955 -164C923 -164 906 -147 906 -115V0C946 0 984 -9 1006 -32L1048 -146C1066 -45 1108 0 1182 0Z M1322 -299C1425 -299 1504 -227 1619 -191C1537 -169 1434 -164 1267 -164H1232C1200 -164 1183 -147 1183 -115V0C1280 0 1354 -24 1455 -107C1473 -122 1535 -171 1657 -171H1774L1814 -278L1809 -290H1764C1594 -290 1500 -449 1380 -449C1337 -449 1303 -428 1269 -398L1229 -298L1238 -288C1267 -293 1297 -299 1322 -299ZM1451 -622C1452 -623 1452 -636 1451 -637L1364 -724L1276 -636V-623L1364 -535Z"/></svg> <svg class="th" viewBox="0 -1000 2759 1250" style="width:2.759em;height:1.250em" aria-hidden="true" focusable="false"><path d="M475 -27C480 -37 483 -48 487 -58C510 -19 544 0 592 0C624 0 641 -17 641 -49V-164C561 -164 532 -172 532 -221V-751H514L425 -626L457 -40C405 -7 303 17 224 17C122 17 43 -23 43 -134C43 -172 52 -219 61 -262H44C27 -207 8 -129 8 -48C8 83 57 179 198 179C290 179 380 137 424 112Z M802 -249 798 -303H779L765 -212C763 -200 762 -189 761 -178C730 -170 685 -164 642 -164C609 -164 593 -148 593 -115V0C636 0 686 -15 720 -39L761 -156C762 -54 825 -1 947 0C1072 0 1211 -17 1324 -57L1394 -189C1449 -292 1375 -436 1220 -436C1087 -436 991 -329 884 -171C827 -182 805 -206 802 -249ZM904 -168C976 -251 1062 -296 1155 -296C1261 -296 1344 -237 1384 -199C1292 -180 1150 -164 1002 -164H989C955 -164 927 -165 904 -168Z M1614 -754H1597V-753L1521 -657L1551 16H1569L1615 -142C1625 -176 1630 -210 1630 -245V-522L1661 -561Z M2131 0C2163 0 2180 -17 2180 -49V-164H2091C2084 -338 2000 -411 1914 -411C1826 -411 1738 -320 1738 -163C1738 -56 1793 0 1873 0H2054C1981 88 1854 138 1710 155V173L1916 266C1987 184 2045 103 2073 0ZM1754 -215C1754 -243 1805 -261 1866 -261C1936 -261 2015 -233 2051 -164H1873C1805 -164 1754 -181 1754 -215Z M2179 -164C2147 -164 2131 -148 2131 -116V0C2181 0 2242 -13 2281 -39L2311 -152C2309 -35 2377 0 2457 0C2489 0 2506 -17 2506 -49V-164C2427 -164 2367 -188 2363 -267L2360 -332H2342L2323 -242C2317 -218 2314 -196 2312 -176C2283 -171 2225 -164 2179 -164ZM2465 -490C2466 -490 2466 -502 2465 -503L2387 -581L2317 -510L2246 -581L2167 -502V-491L2246 -411L2317 -482L2387 -411Z M2458 0C2521 0 2593 -18 2649 -49L2692 -164C2706 -203 2713 -241 2712 -279L2734 -330L2652 -451C2651 -452 2650 -454 2648 -456H2631L2571 -313C2615 -271 2662 -216 2683 -182C2630 -171 2565 -164 2507 -164C2475 -164 2458 -147 2458 -115ZM2679 -619C2680 -620 2680 -633 2679 -634L2592 -721L2504 -633V-620L2592 -532Z"/></svg></span></h2>
+          <p>للتعاون، الأسئلة التقنية، أو مشاريع الطاقة.</p>
+        </div>
+        <div class="reach">
+          <div class="mail glass">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg>
+            <span class="addr" id="addr">eng.haidertechnology@gmail.com</span>
+            <button type="button" class="copy" id="copyMail">نسخ</button>
+          </div>
+          <a class="btn btn-primary" href="https://instagram.com/itshaider.z" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+            إنستغرام <span class="handle">@itshaider.z</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 حيدر الزبيدي</span>
+    <span>مهندس كهرباء · العراق</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Chromium-only refraction through the SVG displacement filter
+  if (navigator.userAgentData && !reduce) document.documentElement.classList.add('refract');
+
+  // pointer-following light on glass surfaces
+  document.querySelectorAll('.glass.lit').forEach(function (el) {
+    el.addEventListener('pointermove', function (e) {
+      var r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+
+  // move a lens under an element inside a container
+  function placeLens(lens, target) {
+    if (!target) { lens.style.opacity = '0'; return; }
+    lens.style.width = target.offsetWidth + 'px';
+    lens.style.transform = 'translateX(' + target.offsetLeft + 'px)';
+    lens.style.opacity = '1';
+  }
+
+  // nav: scrollspy + sliding lens + compact state
+  var nav = document.getElementById('nav');
+  var navLens = document.getElementById('navLens');
+  var links = Array.prototype.slice.call(document.querySelectorAll('#links a'));
+  var current = null;
+  function setActive(id) {
+    if (id === current) return;
+    current = id;
+    var hit = null;
+    links.forEach(function (a) {
+      var on = a.getAttribute('data-sec') === id;
+      a.classList.toggle('active', on);
+      if (on) { a.setAttribute('aria-current', 'true'); hit = a; } else { a.removeAttribute('aria-current'); }
+    });
+    placeLens(navLens, hit);
+  }
+  var sections = ['hero', 'about', 'work', 'news', 'contact'].map(function (id) { return document.getElementById(id); });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) setActive(en.target.id === 'hero' ? null : en.target.id); });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function (s) { if (s) io.observe(s); });
+  }
+  links.forEach(function (a) { a.addEventListener('click', function () { setActive(a.getAttribute('data-sec')); }); });
+  window.addEventListener('scroll', function () { nav.classList.toggle('compact', window.scrollY > 40); }, { passive: true });
+
+  // segmented filter with a sliding lens and view transitions between layouts
+  var seg = document.getElementById('seg');
+  var segLens = document.getElementById('segLens');
+  var tabs = seg ? Array.prototype.slice.call(seg.querySelectorAll('button')) : [];
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#grid .card'));
+  function applyFilter(f) {
+    cards.forEach(function (c) { c.hidden = !(f === 'all' || c.getAttribute('data-cat') === f); });
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      tabs.forEach(function (x) { x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+      placeLens(segLens, t);
+      var f = t.getAttribute('data-filter');
+      if (document.startViewTransition && !reduce) document.startViewTransition(function () { applyFilter(f); });
+      else applyFilter(f);
+    });
+  });
+
+  // copy email: clipboard when allowed, otherwise select the address
+  var copyBtn = document.getElementById('copyMail');
+  var addr = document.getElementById('addr');
+  copyBtn.addEventListener('click', function () {
+    var text = addr.textContent.trim();
+    function selectIt() {
+      var r = document.createRange(); r.selectNodeContents(addr);
+      var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      copyBtn.textContent = 'محدد، انسخه';
+    }
+    function done() {
+      copyBtn.textContent = 'تم النسخ'; copyBtn.classList.add('done');
+      setTimeout(function () { copyBtn.textContent = 'نسخ'; copyBtn.classList.remove('done'); }, 1800);
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, selectIt);
+      else selectIt();
+    } catch (e) { selectIt(); }
+  });
+
+  function layout() {
+    if (seg) placeLens(segLens, seg.querySelector('[aria-selected="true"]'));
+    var a = links.filter(function (l) { return l.classList.contains('active'); })[0];
+    if (a) placeLens(navLens, a);
+  }
+  layout();
+  window.addEventListener('resize', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+})();
+</script>
+
+</body>
+</html>
